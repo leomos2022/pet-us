@@ -140,7 +140,7 @@ export default function LoginScreen() {
                 <TextInput
                   style={styles.input}
                   placeholder="correo@ejemplo.com"
-                  placeholderTextColor="#94a3b8"
+                  placeholderTextColor="#64748b"
                   value={email}
                   onChangeText={setEmail}
                   keyboardType="email-address"
@@ -155,7 +155,7 @@ export default function LoginScreen() {
                   <TextInput
                     style={[styles.input, styles.passwordInput]}
                     placeholder="••••••••"
-                    placeholderTextColor="#94a3b8"
+                    placeholderTextColor="#64748b"
                     value={password}
                     onChangeText={setPassword}
                     secureTextEntry={!showPassword}
@@ -208,7 +208,7 @@ export default function LoginScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#AAC4F5',
+    backgroundColor: '#1e293b',
   },
   topImageContainer: {
     height: '35%',
@@ -221,11 +221,11 @@ const styles = StyleSheet.create({
   },
   imageOverlay: {
     ...StyleSheet.absoluteFillObject,
-    backgroundColor: 'rgba(170, 196, 245, 0.3)',
+    backgroundColor: 'rgba(30, 41, 59, 0.4)',
   },
   formSection: {
     flex: 1,
-    backgroundColor: '#AAC4F5',
+    backgroundColor: '#1e293b',
     paddingHorizontal: 16,
     paddingTop: 8,
     paddingBottom: 16,
@@ -237,42 +237,42 @@ const styles = StyleSheet.create({
   header: {
     alignItems: 'center',
     marginBottom: 8,
-    backgroundColor: 'rgba(255, 255, 255, 0.95)',
+    backgroundColor: 'rgba(30, 41, 59, 0.95)',
     padding: 12,
     borderRadius: 12,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
-    shadowRadius: 4,
-    elevation: 4,
+    shadowOpacity: 0.3,
+    shadowRadius: 8,
+    elevation: 8,
     borderWidth: 1,
-    borderColor: '#e2e8f0',
+    borderColor: '#334155',
   },
   title: {
     fontSize: 24,
     fontWeight: '800',
-    color: '#1e293b',
+    color: '#ffffff',
     marginBottom: 2,
     letterSpacing: 0.5,
   },
   subtitle: {
     fontSize: 14,
-    color: '#64748b',
+    color: '#94a3b8',
     textAlign: 'center',
     fontWeight: '600',
   },
   form: {
-    backgroundColor: 'rgba(255, 255, 255, 0.95)',
+    backgroundColor: 'rgba(30, 41, 59, 0.95)',
     padding: 12,
     borderRadius: 12,
     marginBottom: 8,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
-    shadowRadius: 4,
-    elevation: 4,
+    shadowOpacity: 0.3,
+    shadowRadius: 8,
+    elevation: 8,
     borderWidth: 1,
-    borderColor: '#e2e8f0',
+    borderColor: '#334155',
   },
   inputContainer: {
     marginBottom: 10,
@@ -280,19 +280,19 @@ const styles = StyleSheet.create({
   inputLabel: {
     fontSize: 12,
     fontWeight: '700',
-    color: '#1e293b',
+    color: '#ffffff',
     marginBottom: 4,
     letterSpacing: 0.3,
   },
   input: {
-    backgroundColor: '#f8fafc',
+    backgroundColor: '#334155',
     borderWidth: 1,
-    borderColor: '#e2e8f0',
+    borderColor: '#475569',
     borderRadius: 8,
     paddingHorizontal: 12,
     paddingVertical: 8,
     fontSize: 14,
-    color: '#1e293b',
+    color: '#ffffff',
     fontWeight: '600',
   },
   passwordContainer: {
@@ -343,37 +343,39 @@ const styles = StyleSheet.create({
     letterSpacing: 0.5,
   },
   backButton: {
-    backgroundColor: 'rgba(255, 255, 255, 0.95)',
+    backgroundColor: 'rgba(30, 41, 59, 0.95)',
     borderRadius: 8,
     paddingVertical: 14,
     alignItems: 'center',
     borderWidth: 1,
-    borderColor: '#e2e8f0',
+    borderColor: '#334155',
     shadowColor: '#000',
-    shadowOffset: { width: 0, height: 1 },
-    shadowOpacity: 0.1,
-    shadowRadius: 2,
-    elevation: 2,
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.3,
+    shadowRadius: 8,
+    elevation: 8,
   },
   backButtonText: {
     fontSize: 16,
-    color: '#64748b',
+    color: '#94a3b8',
     fontWeight: '600',
   },
   footer: {
     alignItems: 'center',
-    backgroundColor: 'rgba(255, 255, 255, 0.95)',
+    backgroundColor: 'rgba(30, 41, 59, 0.95)',
     padding: 16,
     borderRadius: 8,
     shadowColor: '#000',
-    shadowOffset: { width: 0, height: 1 },
-    shadowOpacity: 0.1,
-    shadowRadius: 2,
-    elevation: 2,
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.3,
+    shadowRadius: 8,
+    elevation: 8,
+    borderWidth: 1,
+    borderColor: '#334155',
   },
   footerText: {
     fontSize: 14,
-    color: '#64748b',
+    color: '#94a3b8',
     marginBottom: 8,
     fontWeight: '500',
   },

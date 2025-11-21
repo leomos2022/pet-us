@@ -186,7 +186,7 @@ export default function RegisterScreen() {
                   <TextInput
                     style={styles.input}
                     placeholder="Tu nombre completo"
-                    placeholderTextColor="#94a3b8"
+                    placeholderTextColor="#64748b"
                     value={formData.name}
                     onChangeText={(value) => updateFormData('name', value)}
                     autoCapitalize="words"
@@ -199,7 +199,7 @@ export default function RegisterScreen() {
                   <TextInput
                     style={styles.input}
                     placeholder="correo@ejemplo.com"
-                    placeholderTextColor="#94a3b8"
+                    placeholderTextColor="#64748b"
                     value={formData.email}
                     onChangeText={(value) => updateFormData('email', value)}
                     keyboardType="email-address"
@@ -213,7 +213,7 @@ export default function RegisterScreen() {
                   <TextInput
                     style={styles.input}
                     placeholder="+1 234 567 8900"
-                    placeholderTextColor="#94a3b8"
+                    placeholderTextColor="#64748b"
                     value={formData.phone}
                     onChangeText={(value) => updateFormData('phone', value)}
                     keyboardType="phone-pad"
@@ -226,7 +226,7 @@ export default function RegisterScreen() {
                     <TextInput
                       style={[styles.input, styles.passwordInput]}
                       placeholder="••••••••"
-                      placeholderTextColor="#94a3b8"
+                      placeholderTextColor="#64748b"
                       value={formData.password}
                       onChangeText={(value) => updateFormData('password', value)}
                       secureTextEntry={!showPassword}
@@ -247,7 +247,7 @@ export default function RegisterScreen() {
                     <TextInput
                       style={[styles.input, styles.passwordInput]}
                       placeholder="••••••••"
-                      placeholderTextColor="#94a3b8"
+                      placeholderTextColor="#64748b"
                       value={formData.confirmPassword}
                       onChangeText={(value) => updateFormData('confirmPassword', value)}
                       secureTextEntry={!showConfirmPassword}
@@ -330,12 +330,12 @@ const styles = StyleSheet.create({
   header: {
     alignItems: 'center',
     marginBottom: 12,
-    backgroundColor: 'rgba(255, 255, 255, 0.98)',
+    backgroundColor: 'rgba(30, 41, 59, 0.95)',
     padding: 16,
     borderRadius: 20,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 6 },
-    shadowOpacity: 0.25,
+    shadowOpacity: 0.4,
     shadowRadius: 12,
     elevation: 12,
     borderWidth: 1,
@@ -357,22 +357,22 @@ const styles = StyleSheet.create({
   },
   description: {
     fontSize: 13,
-    color: '#94a3b8',
+    color: '#64748b',
     textAlign: 'center',
     fontWeight: '500',
   },
   form: {
-    backgroundColor: 'rgba(255, 255, 255, 0.98)',
+    backgroundColor: 'rgba(30, 41, 59, 0.95)',
     padding: 18,
     borderRadius: 20,
     marginBottom: 12,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.25,
+    shadowOpacity: 0.4,
     shadowRadius: 8,
     elevation: 8,
     borderWidth: 1,
-    borderColor: 'rgba(255, 255, 255, 0.3)',
+    borderColor: '#334155',
   },
   inputContainer: {
     marginBottom: 14,
@@ -380,19 +380,19 @@ const styles = StyleSheet.create({
   inputLabel: {
     fontSize: 14,
     fontWeight: '700',
-    color: '#1e293b',
+    color: '#ffffff',
     marginBottom: 8,
     letterSpacing: 0.5,
   },
   input: {
-    backgroundColor: '#f8fafc',
+    backgroundColor: '#334155',
     borderWidth: 2,
-    borderColor: '#e2e8f0',
+    borderColor: '#475569',
     borderRadius: 12,
     paddingHorizontal: 16,
     paddingVertical: 12,
     fontSize: 16,
-    color: '#1e293b',
+    color: '#ffffff',
     fontWeight: '600',
   },
   passwordContainer: {
@@ -434,38 +434,40 @@ const styles = StyleSheet.create({
     letterSpacing: 0.5,
   },
   backButton: {
-    backgroundColor: '#ffffff',
+    backgroundColor: 'rgba(30, 41, 59, 0.95)',
     borderRadius: 12,
     paddingVertical: 14,
     alignItems: 'center',
     borderWidth: 2,
-    borderColor: '#e2e8f0',
+    borderColor: '#334155',
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 3 },
-    shadowOpacity: 0.1,
+    shadowOpacity: 0.4,
     shadowRadius: 6,
     elevation: 6,
   },
   backButtonText: {
     fontSize: 18,
-    color: '#64748b',
+    color: '#94a3b8',
     fontWeight: '600',
   },
   footer: {
     alignItems: 'center',
     marginTop: 8,
-    backgroundColor: '#ffffff',
+    backgroundColor: 'rgba(30, 41, 59, 0.95)',
     padding: 14,
     borderRadius: 12,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 3 },
-    shadowOpacity: 0.1,
+    shadowOpacity: 0.4,
     shadowRadius: 6,
     elevation: 6,
+    borderWidth: 1,
+    borderColor: '#334155',
   },
   footerText: {
     fontSize: 16,
-    color: '#64748b',
+    color: '#94a3b8',
     marginBottom: 8,
     fontWeight: '500',
   },
